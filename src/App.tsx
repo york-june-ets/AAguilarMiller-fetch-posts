@@ -14,7 +14,7 @@ function App() {
 
     waitForPosts();
   }, []);
-console.log(posts)
+
   return (
     <div className="App">
       {posts.map((post) => (
