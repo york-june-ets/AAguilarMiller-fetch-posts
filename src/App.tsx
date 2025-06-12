@@ -13,8 +13,8 @@ function App() {
     };
 
     waitForPosts();
-  }, [posts]);
-
+  }, []);
+console.log(posts)
   return (
     <div className="App">
       {posts.map((post) => (
