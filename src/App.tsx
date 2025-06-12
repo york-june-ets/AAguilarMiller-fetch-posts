@@ -1,9 +1,10 @@
 import { useEffect, useState } from 'react';
 import './App.css';
 import { posts as initialPosts } from './fetch/fetch-data';
+import { PostsInterface } from './Interfaces/posts';
 
 function App() {
-  const [posts, setPosts] = useState<any[]>([]);
+  const [posts, setPosts] = useState<PostsInterface[]>([]);
 
   useEffect(() => {
     const waitForPosts = async () => {
